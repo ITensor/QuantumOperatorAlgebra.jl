@@ -7,6 +7,21 @@
 [![Code Style: Blue](https://img.shields.io/badge/code%20style-blue-4495d1.svg)](https://github.com/invenia/BlueStyle)
 [![Aqua](https://raw.githubusercontent.com/JuliaTesting/Aqua.jl/master/badge.svg)](https://github.com/JuliaTesting/Aqua.jl)
 
+Quantum operator algebra system. This is mostly meant to be used as a backend in [ITensorMPS.jl](https://github.com/ITensor/ITensorMPS.jl)
+and [ITensorNetworks.jl](https://github.com/ITensor/ITensorNetworks.jl) for lazily representing operator expressions
+that will be turned into quantum circuits and tensor networks.
+
+See also:
+- [ITensorQuantumOperatorDefinitions.jl](https://github.com/ITensor/ITensorQuantumOperatorDefinitions.jl) for operator definitions
+compatible with this system.
+- [Yao.jl](https://github.com/QuantumBFS/Yao.jl)
+- [Quac.jl](https://github.com/bsc-quantic/Quac.jl)
+- [QuantumAlgebra.jl](https://github.com/jfeist/QuantumAlgebra.jl)
+- [QuantumCumulants.jl](https://github.com/qojulia/QuantumCumulants.jl)
+- [QuantumSymbolics.jl](https://github.com/QuantumSavory/QuantumSymbolics.jl)
+- [QuantumOptics.jl](https://github.com/qojulia/QuantumOptics.jl), [QuantumInterface.jl](https://github.com/qojulia/QuantumInterface.jl)
+- [QuantumLattices.QuantumOperators](https://github.com/Quantum-Many-Body/QuantumLattices.jl/blob/master/src/QuantumOperators.jl)
+
 ## Installation instructions
 
 This package resides in the `ITensor/ITensorRegistry` local registry.
