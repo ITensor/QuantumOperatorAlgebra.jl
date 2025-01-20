@@ -32,10 +32,39 @@ julia> Pkg.add("QuantumOperatorAlgebra")
 ## Examples
 
 ````julia
-using QuantumOperatorAlgebra: QuantumOperatorAlgebra
-````
+using QuantumOperatorAlgebra: Op, Prod, Scaled, Sum, coefficient, sites, terms, which_op
+using Test: @test
 
-Examples go here.
+o1 = Op("X", 1)
+o2 = Op("Y", 2)
+
+@test which_op(o1) == "X"
+@test sites(o1) == (1,)
+
+o = o1 + o2
+
+@test o isa Sum{Op}
+@test terms(o)[1] == o1
+@test terms(o)[2] == o2
+
+o *= 2
+
+@test o isa Sum{Scaled{Int,Op}}
+@test terms(o)[1] == 2 * o1
+@test terms(o)[2] == 2 * o2
+@test coefficient(terms(o)[1]) == 2
+@test coefficient(terms(o)[2]) == 2
+
+o3 = Op("Z", 3)
+
+o *= o3
+
+@test o isa Sum{Scaled{Int,Prod{Op}}}
+@test terms(o)[1] == 2 * o1 * o3
+@test terms(o)[2] == 2 * o2 * o3
+@test coefficient(terms(o)[1]) == 2
+@test coefficient(terms(o)[2]) == 2
+````
 
 ---
 
