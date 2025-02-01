@@ -21,6 +21,11 @@ compatible with this system.
 - [QuantumSymbolics.jl](https://github.com/QuantumSavory/QuantumSymbolics.jl)
 - [QuantumOptics.jl](https://github.com/qojulia/QuantumOptics.jl), [QuantumInterface.jl](https://github.com/qojulia/QuantumInterface.jl)
 - [QuantumLattices.QuantumOperators](https://github.com/Quantum-Many-Body/QuantumLattices.jl/blob/master/src/QuantumOperators.jl)
+- [QuantumToolbox.jl](https://github.com/qutip/QuantumToolbox.jl)
+- [Qaintessent.jl](https://github.com/Qaintum/Qaintessent.jl)
+- [Snowflurry.jl](https://github.com/SnowflurrySDK/Snowflurry.jl)
+- [QuantumCircuitOpt.jl](https://github.com/harshangrjn/QuantumCircuitOpt.jl)
+- [VQC.jl](https://github.com/supremacyfuture/VQC)
 
 ## Installation instructions
 
