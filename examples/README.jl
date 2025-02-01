@@ -13,7 +13,7 @@
 #
 # See also:
 # - [ITensorQuantumOperatorDefinitions.jl](https://github.com/ITensor/ITensorQuantumOperatorDefinitions.jl) for operator definitions
-compatible with this system.
+# compatible with this system.
 # - [Yao.jl](https://github.com/QuantumBFS/Yao.jl)
 # - [Quac.jl](https://github.com/bsc-quantic/Quac.jl)
 # - [QuantumAlgebra.jl](https://github.com/jfeist/QuantumAlgebra.jl)
