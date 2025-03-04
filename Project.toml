@@ -1,7 +1,7 @@
 name = "QuantumOperatorAlgebra"
 uuid = "c7a6d0f7-daa6-4368-ba67-89ed64127c3b"
 authors = ["ITensor developers <support@itensor.org> and contributors"]
-version = "0.1.0"
+version = "0.1.1"
 
 [compat]
 julia = "1.10"
