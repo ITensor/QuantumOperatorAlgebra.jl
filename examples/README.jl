@@ -27,6 +27,12 @@
 # - [QuantumCircuitOpt.jl](https://github.com/harshangrjn/QuantumCircuitOpt.jl)
 # - [VQC.jl](https://github.com/supremacyfuture/VQC)
 
+# ## Support
+#
+# {CCQ_LOGO}
+#
+# QuantumOperatorAlgebra.jl is supported by the Flatiron Institute, a division of the Simons Foundation.
+
 # ## Installation instructions
 
 # This package resides in the `ITensor/ITensorRegistry` local registry.
