@@ -2,5 +2,5 @@ using QuantumOperatorAlgebra: QuantumOperatorAlgebra
 using Test: @test, @testset
 
 @testset "QuantumOperatorAlgebra" begin
-  # Tests go here.
+    # Tests go here.
 end

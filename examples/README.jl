@@ -1,5 +1,5 @@
 # # QuantumOperatorAlgebra.jl
-# 
+#
 # [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://itensor.github.io/QuantumOperatorAlgebra.jl/stable/)
 # [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://itensor.github.io/QuantumOperatorAlgebra.jl/dev/)
 # [![Build Status](https://github.com/ITensor/QuantumOperatorAlgebra.jl/actions/workflows/Tests.yml/badge.svg?branch=main)](https://github.com/ITensor/QuantumOperatorAlgebra.jl/actions/workflows/Tests.yml?query=branch%3Amain)
@@ -80,7 +80,7 @@ o = o1 + o2
 
 o *= 2
 
-@test o isa Sum{Scaled{Int,Op}}
+@test o isa Sum{Scaled{Int, Op}}
 @test terms(o)[1] == 2 * o1
 @test terms(o)[2] == 2 * o2
 @test coefficient(terms(o)[1]) == 2
@@ -90,7 +90,7 @@ o3 = Op("Z", 3)
 
 o *= o3
 
-@test o isa Sum{Scaled{Int,Prod{Op}}}
+@test o isa Sum{Scaled{Int, Prod{Op}}}
 @test terms(o)[1] == 2 * o1 * o3
 @test terms(o)[2] == 2 * o2 * o3
 @test coefficient(terms(o)[1]) == 2
