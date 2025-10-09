@@ -79,7 +79,7 @@ o = o1 + o2
 
 o *= 2
 
-@test o isa Sum{Scaled{Int,Op}}
+@test o isa Sum{Scaled{Int, Op}}
 @test terms(o)[1] == 2 * o1
 @test terms(o)[2] == 2 * o2
 @test coefficient(terms(o)[1]) == 2
@@ -89,7 +89,7 @@ o3 = Op("Z", 3)
 
 o *= o3
 
-@test o isa Sum{Scaled{Int,Prod{Op}}}
+@test o isa Sum{Scaled{Int, Prod{Op}}}
 @test terms(o)[1] == 2 * o1 * o3
 @test terms(o)[2] == 2 * o2 * o3
 @test coefficient(terms(o)[1]) == 2
