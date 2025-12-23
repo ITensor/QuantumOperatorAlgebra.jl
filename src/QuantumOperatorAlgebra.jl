@@ -1,10 +1,18 @@
 module QuantumOperatorAlgebra
 
-include("LazyApply/LazyApply.jl")
-# Make these available as `QuantumOperatorAlgebra.f`.
-using .LazyApply: coefficient, terms
+export Op, LocalOp
 
-include("op.jl")
-include("trotter.jl")
+using LightSumTypes
+using VectorInterface
+import VectorInterface: scalartype
+using TermInterface
+using Dictionaries
+
+import Base: +, *, -, /, \
+import Base: one, zero, isone, iszero
+import Base: show, show_unquoted
+
+include("symbolicalgebra/abstractalgebra.jl")
+include("symbolicalgebra/localalgebra.jl")
 
 end
