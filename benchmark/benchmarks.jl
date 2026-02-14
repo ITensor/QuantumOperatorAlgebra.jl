@@ -1,5 +1,5 @@
-using QuantumOperatorAlgebra
 using BenchmarkTools
+using QuantumOperatorAlgebra
 
 SUITE = BenchmarkGroup()
 SUITE["rand"] = @benchmarkable rand(10)

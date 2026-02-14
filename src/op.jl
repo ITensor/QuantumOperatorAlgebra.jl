@@ -1,4 +1,4 @@
-using .LazyApply: LazyApply, Exp, Prod, Scaled, Sum, argument, coefficient
+using .LazyApply: Exp, LazyApply, Prod, Scaled, Sum, argument, coefficient
 
 #####################################################################################
 # General functionality
@@ -47,7 +47,7 @@ end
 ## end
 
 struct Op
-    which_op
+    which_op::Any
     sites::Tuple
     params::NamedTuple
     function Op(which_op, site...; kwargs...)
