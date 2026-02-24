@@ -3,5 +3,17 @@ uuid = "c7a6d0f7-daa6-4368-ba67-89ed64127c3b"
 version = "0.1.5"
 authors = ["ITensor developers <support@itensor.org> and contributors"]
 
+[deps]
+Dictionaries = "85a47980-9c8c-11e8-2b9f-f7ca1fa99fb4"
+LightSumTypes = "f56206fc-af4c-5561-a72a-43fe2ca5a923"
+SymbolicUtils = "d1185830-fcd6-423d-90d6-eec64667417b"
+TermInterface = "8ea1fca8-c5ef-4a55-8b96-4e9afe9c9a3c"
+VectorInterface = "409d34a3-91d5-4945-b6ec-7529ddf182d8"
+
 [compat]
+Dictionaries = "0.4.4"
+LightSumTypes = "5.0.1"
+SymbolicUtils = "3.23.0"
+TermInterface = "2.0.0"
+VectorInterface = "0.5.0"
 julia = "1.10"
